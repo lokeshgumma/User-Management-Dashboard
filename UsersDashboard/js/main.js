@@ -132,7 +132,7 @@ function viewUser(userId) {
 
 // Edit user (Mock update)
 function editUser(userId) {
-    window.location.href = `/EditUser.html?userId=${userId}`;
+    window.location.href = `EditUser.html?userId=${userId}`;
 
 }
 
