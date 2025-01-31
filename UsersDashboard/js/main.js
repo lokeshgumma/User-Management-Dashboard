@@ -49,7 +49,7 @@ function login() {
     window.location.href = ("login.html")
 }
 function newStore() {
-    window.location.href = ("AddNewuser.html")
+    window.location.href = ("AddNewUser.html")
 }
 
 
@@ -132,7 +132,7 @@ function viewUser(userId) {
 
 // Edit user (Mock update)
 function editUser(userId) {
-    window.location.href = `EditUser.html?userId=${userId}`;
+    window.location.href = `EditUser.Html?userId=${userId}`;
 
 }
 
