@@ -32,10 +32,8 @@
         return false;
     });
 
-
-
-
 })(jQuery);
+
 function backToUsersListPage() {
     window.location.href = ("UsersList.html")
 }
@@ -128,87 +126,6 @@ function updatePaginationButtons() {
 }
 
 
-
-
-
-//SearchUser
-function searchUser() {
-    // Get the values from the input fields
-    const userId = document.getElementById('userId').value.trim();
-    const firstName = document.getElementById('firstName').value.trim();
-    const department = document.getElementById('department').value.trim();
-    const email = document.getElementById('email').value.trim();
-
-    // Construct the query string
-    let queryParams = '?';
-    if (userId) queryParams += `id=${userId}&`;
-    if (firstName) queryParams += `name=${firstName}&`;
-    if (department) queryParams += `company.name=${department}&`;
-    if (email) queryParams += `email=${email}&`;
-
-    // Remove the trailing '&' if any
-    queryParams = queryParams.slice(0, -1);
-
-    // Fetch users with the query parameters
-
-    fetchOneUsers(queryParams);
-
-
-}
-function fetchOneUsers(queryParams) {
-
-    // Debugging log
-
-    fetch(apiUrl + queryParams)
-        .then(response => {
-            if (!response.ok) {
-                console.error('Failed to fetch data from the API');
-                loadingIndicator.style.display = 'none'; // Hide loading indicator
-                return;
-            }
-            return response.json();
-        })
-        .then(users => {
-            if (!users) {
-                console.error('No users data received.');
-                loadingIndicator.style.display = 'none'; // Hide loading indicator
-                return;
-            }
-
-            const tbody = document.querySelector('tbody');
-            tbody.innerHTML = ''; // Clear previous data
-
-            if (users.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="8">No users found.</td></tr>';
-            }
-
-            users.forEach((user, index) => {
-                const row = `<tr>
-                    <td>${index + 1}</td>
-                    <td>${user.id}</td>
-                    <td>${user.name.split(' ')[0]}</td>
-                    <td>${user.name.split(' ')[1] || ''}</td>
-                    <td>${user.email}</td>
-                    <td>${user.company.name}</td>
-                    <td><a href="#" onclick="toggleStatus(${user.id})">Activate</a></td>
-                    <td>
-                        <a href="#" onclick="editUser(${user.id})">Edit</a> / 
-                        <a href="#" onclick="viewUser(${user.id})">View</a> / 
-                        <a href="#" onclick="deleteUser(${user.id})">Delete</a>
-                    </td>
-                </tr>`;
-                tbody.innerHTML += row;
-            });
-
-            loadingIndicator.style.display = 'none'; // Hide loading indicator
-        })
-        .catch(error => {
-            console.error('Error fetching users:', error);
-            loadingIndicator.style.display = 'none'; // Hide loading indicator
-        });
-
-}
-
 function viewUser(userId) {
     window.location.href = `ViewUser.html?userId=${userId}`;
 }
@@ -230,8 +147,6 @@ function deleteUser(userId) {
             .catch(error => console.error('Error deleting user:', error));
     }
 }
-
-
 
 
 // Toggle user status (Mock functionality)
