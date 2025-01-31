@@ -6,6 +6,7 @@ User Management Dashboard
 This project is a simple User Management Dashboard that allows users to log in and view a list of users fetched from a mock backend API. The dashboard includes functionalities such as viewing, adding, editing, and deleting users, although due to API limitations, some operations are simulated with alerts.
 
 **Features**
+=============
 
 **User Login Page:** Users can log in with any valid email ID and password.
 
@@ -16,6 +17,7 @@ This project is a simple User Management Dashboard that allows users to log in a
 **User List Page:** After successful login, users are redirected to the UsersList.html page.
 
 **CRUD Operations:**
+====================
 
 **View:** Displays users dynamically fetched from a free API.
 
@@ -24,6 +26,7 @@ This project is a simple User Management Dashboard that allows users to log in a
 **Pagination:** Implemented below the user table to manage overflow of users.
 
 **UI Enhancements**:
+====================
 
 Used Bootstrap classes and libraries for a clean UI.
 
@@ -42,6 +45,7 @@ Added a "Back to Top" arrow for easy navigation.
 **Libraries:** Bootstrap, Fetch API
 
 **Project Structure**
+======================
 
 index.html - Main entry page
 
@@ -78,6 +82,7 @@ LICENSE.txt - Project license
 bootstrap-admin-template-free.jpg - Admin template image
 
 **Setup & Installation**
+========================
 
 **Prerequisites**
 
@@ -111,7 +116,7 @@ Explore the User Management functionalities.
 
 **UI Design:** Ensuring responsiveness and a clean user experience using Bootstrap required adjustments and testing across different screen sizes.
 
-Future Improvements
+**Future Improvements**
 
 Implement a real backend API to allow actual user creation, modification, and deletion.
 
@@ -126,6 +131,7 @@ Enhance UI with animations and better user experience elements.
 [https://user-management-dashboard-nine-red.vercel.app/UsersDashboard/login.html ]
 
 **Author**
+=========
 
 Developed by Lokesh
 
