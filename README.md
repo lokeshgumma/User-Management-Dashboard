@@ -1,28 +1,28 @@
-#User Management Dashboard
+##User Management Dashboard
 
-Project Overview
+**Project Overview**
 
 This project is a simple User Management Dashboard that allows users to log in and view a list of users fetched from a mock backend API. The dashboard includes functionalities such as viewing, adding, editing, and deleting users, although due to API limitations, some operations are simulated with alerts.
 
-Features
+**Features**
 
-User Login Page: Users can log in with any valid email ID and password.
+**User Login Page:** Users can log in with any valid email ID and password.
 
-Form Validations: Email input has validation to ensure proper format.
+**Form Validations:** Email input has validation to ensure proper format.
 
-Forgot Password Pages: Placeholder pages (ForgotPassword.html, ForgotPassWordWithEmail.html, ForgotPaaswordwithSecurityQuestions.html, OTPwithemailid.html, PhoneNumberOTP.html) for password recovery are included for UI completeness, but they are not functional as no OTP generation is implemented.
+**Forgot Password Pages:** Placeholder pages (ForgotPassword.html, ForgotPassWordWithEmail.html, ForgotPaaswordwithSecurityQuestions.html, OTPwithemailid.html, PhoneNumberOTP.html) for password recovery are included for UI completeness, but they are not functional as no OTP generation is implemented.
 
-User List Page: After successful login, users are redirected to the UsersList.html page.
+**User List Page:** After successful login, users are redirected to the UsersList.html page.
 
-CRUD Operations:
+**CRUD Operations:**
 
-View: Displays users dynamically fetched from a free API.
+**View:** Displays users dynamically fetched from a free API.
 
-Add/Edit/Delete: These actions are simulated using alerts as the API does not support persistent data changes.
+**Add/Edit/Delete:** These actions are simulated using alerts as the API does not support persistent data changes.
 
-Pagination: Implemented below the user table to manage overflow of users.
+**Pagination:** Implemented below the user table to manage overflow of users.
 
-UI Enhancements:
+**UI Enhancements**:
 
 Used Bootstrap classes and libraries for a clean UI.
 
@@ -30,17 +30,17 @@ Implemented a responsive layout with a footer, header, and side navigation bar.
 
 Added a "Back to Top" arrow for easy navigation.
 
-Logout Option: Users can log out from the dashboard.
+**Logout Option:** Users can log out from the dashboard.
 
-Technologies Used
+**Technologies Used**
 
-Frontend: HTML, CSS, JavaScript, Bootstrap
+**Frontend:** HTML, CSS, JavaScript, Bootstrap
 
-API: JSONPlaceholder (Free REST API for testing)
+**API:** JSONPlaceholder (Free REST API for testing)
 
-Libraries: Bootstrap, Fetch API
+**Libraries:** Bootstrap, Fetch API
 
-Project Structure
+**Project Structure**
 
 index.html - Main entry page
 
@@ -76,9 +76,9 @@ LICENSE.txt - Project license
 
 bootstrap-admin-template-free.jpg - Admin template image
 
-Setup & Installation
+**Setup & Installation**
 
-Prerequisites
+**Prerequisites**
 
 A web browser (Chrome, Firefox, Edge, etc.)
 
@@ -86,11 +86,11 @@ Git installed (if cloning the repository)
 
 Steps to Run the Project
 
-Clone the repository:
+**Clone the repository:**
 
-git clone [Your GitHub Repository URL]
+1.git clone [Your GitHub Repository URL]
 
-Navigate to the project directory:
+2.Navigate to the project directory:
 
 cd user-management-dashboard
 
@@ -100,15 +100,15 @@ Login with any valid email ID and any password.
 
 Explore the User Management functionalities.
 
-Challenges Faced
+**Challenges Faced**
 
-API Limitations: JSONPlaceholder does not support actual data modifications (POST, PUT, DELETE). This required implementing alerts to simulate these actions.
+**API Limitations:** JSONPlaceholder does not support actual data modifications (POST, PUT, DELETE). This required implementing alerts to simulate these actions.
 
-Deployment Issues: Faced difficulties deploying due to API request handling, which was resolved through debugging and configuring CORS policies correctly.
+**Deployment Issues:** Faced difficulties deploying due to API request handling, which was resolved through debugging and configuring CORS policies correctly.
 
-Pagination Handling: Implementing pagination dynamically while fetching API data required managing state correctly.
+**Pagination Handling:** Implementing pagination dynamically while fetching API data required managing state correctly.
 
-UI Design: Ensuring responsiveness and a clean user experience using Bootstrap required adjustments and testing across different screen sizes.
+**UI Design:** Ensuring responsiveness and a clean user experience using Bootstrap required adjustments and testing across different screen sizes.
 
 Future Improvements
 
@@ -120,11 +120,11 @@ Implement a working forgot password feature with OTP verification.
 
 Enhance UI with animations and better user experience elements.
 
-Deployment Link
+**Deployment Link**
 
-[Insert Deployment Link Here]
+[https://user-management-dashboard-nine-red.vercel.app/UsersDashboard/login.html ]
 
-Author
+**Author**
 
 Developed by Lokesh
 
